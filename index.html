@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Document metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Page title -->
     <title>Puzzle Game</title>
   </head>
   <body>
+    <!-- File input for uploading an image. Onchange will invoke function on script.js file -->
     <input
       type="file"
       id="fileInput"
       accept="image/*"
-      onchange="handleFileSelect(event)"
+      onchange="handleFileSelect(event)"  
     />
+    
+    <!-- Container for the puzzle pieces -->
     <div id="puzzle-container"></div>
+    
+    <!-- Display for the stroke counter (number of moves made by the user) -->
     <div id="stroke-counter">Strokes: 0</div>
 
+    <!-- Include the external JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>

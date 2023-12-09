@@ -1,37 +1,42 @@
+/* Styling for the entire body of the webpage */
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 20px;
+  font-family: Arial, sans-serif; /* Set font family for text */
+  text-align: center; /* Center-align text within the body */
+  margin: 20px; /* Add margin around the body */
 }
 
+/* Styling for file input element */
 input[type="file"] {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Add margin below the file input */
 }
 
+/* Styling for the puzzle container */
 #puzzle-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-  margin-top: 20px;
-  max-width: 600px;
-  max-height: 600px;
+  display: grid; /* Use grid layout for the puzzle pieces */
+  grid-template-columns: repeat(4, 1fr); /* Create 4 columns in the grid */
+  gap: 5px; /* Set gap between puzzle pieces */
+  margin-top: 20px; /* Add margin above the puzzle container */
+  max-width: 600px; /* Set maximum width for the puzzle container */
+  max-height: 600px; /* Set maximum height for the puzzle container */
 }
 
+/* Styling for individual puzzle pieces */
 .puzzle-piece {
-  width: 100%;
-  /* height: 100%; */
-  padding-bottom: 100%;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  background-position: center;
+  width: 100%; /* Set width to 100% of the parent container */
+  padding-bottom: 100%; /* Create a square aspect ratio for each piece */
+  background-size: 100% 100%; /* Ensure the background image covers the entire piece */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  cursor: pointer; /* Set cursor to pointer for interactive pieces */
+  background-position: center; /* Center the background image */
 }
 
+/* Styling for empty puzzle pieces */
 .empty-piece {
-  background-color: #ccc; /* Color for the empty puzzle piece */
+  background-color: #ccc; /* Set background color for the empty puzzle piece */
 }
 
+/* Styling for the stroke counter display */
 #stroke-counter {
-  margin-top: 20px;
-  font-weight: bold;
+  margin-top: 20px; /* Add margin above the stroke counter */
+  font-weight: bold; /* Set bold font weight for emphasis */
 }
