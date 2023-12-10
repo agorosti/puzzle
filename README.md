@@ -1,5 +1,6 @@
 # puzzle
 Exercise to create a puzzle from a picture, using HTML, JavaScript and Canvas
+See SAMPLES.MD to see references and similar exercices
 
 The goal is to create a web application that
 1.   uploads a selected file with picture from web page user
